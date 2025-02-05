@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #808000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Шапка */
+header {
+  background-color: #BC986A;
+  color: white;
+  padding: 30px;
+  font-size: 36px;
+}
+
+/* Основной контейнер */
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Галерея */
+.gallery-group {
+  margin-bottom: 45px;
+}
+
+h2 {
+  margin-bottom: 22px;
+  font-size: 32px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Картинки */
+.gallery img {
+  width: 300px; /* Обычный размер */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Эффект увеличения в 1.6 раза */
+.gallery img:hover {
+  transform: scale(1.6);
+  z-index: 1000; /* Чтобы изображение было поверх остальных */
+}
+footer{
+  background-color: #DAAD86;
+}
+.text{
+  background: linear-gradient(90deg, #ff3d3d, #ff9100, #ffee00, #33ff00, #00e1ff, #b400ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Делаем текст прозрачным, чтобы был виден градиент */
+  font-size: small; /* Сделаем текст жирным */
+}
+.he{
+  font-size: 20px;
+}
+
